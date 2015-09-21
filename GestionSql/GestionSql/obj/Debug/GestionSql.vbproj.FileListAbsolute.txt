@@ -1,0 +1,13 @@
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\obj\Debug\ResolveAssemblyReference.cache
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\obj\Debug\GestionSql.Resources.resources
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\obj\Debug\GenerateResource.read.1.tlog
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\obj\Debug\GenerateResource.write.1.tlog
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\bin\Debug\GestionSql.dll
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\bin\Debug\GestionSql.pdb
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\bin\Debug\GestionSql.xml
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\bin\Debug\Facturador.exe
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\bin\Debug\Facturador.pdb
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\bin\Debug\Facturador.xml
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\obj\Debug\GestionSql.dll
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\obj\Debug\GestionSql.xml
+D:\SEAS\visual.net\VisualBasic.net avanzado\GestionSql\GestionSql\obj\Debug\GestionSql.pdb
