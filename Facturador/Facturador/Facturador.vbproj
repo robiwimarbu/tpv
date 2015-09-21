@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{481C810F-60F3-4594-BB22-994348E9DDAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Facturador.My.MyApplication</StartupObject>
+    <RootNamespace>Facturador</RootNamespace>
+    <AssemblyName>Facturador</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Facturador.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Facturador.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GestionSql">
+      <HintPath>..\..\GestionSql\GestionSql\bin\Debug\GestionSql.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccionCliente.vb" />
+    <Compile Include="AccionConsulta.vb" />
+    <Compile Include="AccionUsuario.vb" />
+    <Compile Include="AccionProducto.vb" />
+    <Compile Include="AccionVenta.vb" />
+    <Compile Include="FrmAcercade.Designer.vb">
+      <DependentUpon>FrmAcercade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAcercade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultas.Designer.vb">
+      <DependentUpon>FrmConsultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDato.Designer.vb">
+      <DependentUpon>FrmDato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos.Designer.vb">
+      <DependentUpon>FrmProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientes.Designer.vb">
+      <DependentUpon>FrmClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.vb">
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVentas.Designer.vb">
+      <DependentUpon>FrmVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVideotutorial.Designer.vb">
+      <DependentUpon>FrmVideotutorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVideotutorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAcercade.resx">
+      <DependentUpon>FrmAcercade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientes.resx">
+      <DependentUpon>FrmClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultas.resx">
+      <DependentUpon>FrmConsultas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDato.resx">
+      <DependentUpon>FrmDato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos.resx">
+      <DependentUpon>FrmProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVentas.resx">
+      <DependentUpon>FrmVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVideotutorial.resx">
+      <DependentUpon>FrmVideotutorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash_register.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closebox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erase.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abort.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping cart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold_bullion.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping cart1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie chart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llave.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loguin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UCAV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fsv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fsv1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
